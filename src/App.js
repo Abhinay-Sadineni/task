@@ -10,10 +10,10 @@ function App() {
     <BrowserRouter>
     <main>
       <Routes>
-      <Route exact path='/' element={<Home/>}></Route>
-      <Route exact path='/create' element={<Create/>}></Route>
-      <Route exact path='/edit/:id' element={<Edit/>}></Route>
-      <Route exact path='/list' element={<ListPage/>}></Route>
+      <Route exact path='/task' element={<Home/>}></Route>
+      <Route exact path='/task/create' element={<Create/>}></Route>
+      <Route exact path='/task/edit/:id' element={<Edit/>}></Route>
+      <Route exact path='/task/list' element={<ListPage/>}></Route>
       </Routes>
     </main>
     </BrowserRouter>
