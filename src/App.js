@@ -1,16 +1,17 @@
 import './App.css';
-import {HashRouter as Router ,Route,Routes} from 'react-router-dom';
+import {BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Create from './components/Create';
 import ListPage from './components/ListPage';
 import Edit from './components/Edit';
 import Navbar from './components/Navbar';
+
 function App() {
 
   return (
-    <Router basename="/">
+    <Router>
     <main>
-      <Navbar/>
+     <Navbar></Navbar>
       <Routes>
     
       <Route exact path="/" element={<Home/>}></Route>
