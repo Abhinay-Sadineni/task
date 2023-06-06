@@ -1,1 +1,10 @@
 http://karna-rash.github.io/task/
+
+Gitpages is not working properly with react framework i urge to set locally using
+
+1)npm intall
+2)npm start
+
+
+first command to download node modules
+second to start local server
