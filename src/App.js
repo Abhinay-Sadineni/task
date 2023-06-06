@@ -8,15 +8,15 @@ import Navbar from './components/Navbar';
 function App() {
 
   return (
-    <Router basename='/'>
+    <Router basename="/">
     <main>
       <Navbar/>
       <Routes>
     
-      <Route exact path='/' element={<Home/>}></Route>
-      <Route exact path='/create' element={<Create/>}></Route>
-      <Route exact path='/edit/:id' element={<Edit/>}></Route>
-      <Route exact path='/list' element={<ListPage/>}></Route>
+      <Route exact path="/" element={<Home/>}></Route>
+      <Route exact path="/create" element={<Create/>}></Route>
+      <Route exact path="/edit/:id" element={<Edit/>}></Route>
+      <Route exact path="/list" element={<ListPage/>}></Route>
       </Routes>
     </main>
     </Router >
