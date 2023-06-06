@@ -4,12 +4,15 @@ import Home from './components/Home';
 import Create from './components/Create';
 import ListPage from './components/ListPage';
 import Edit from './components/Edit';
+import Navbar from './components/Navbar';
 function App() {
 
   return (
     <Router >
     <main>
+      <Navbar/>
       <Routes>
+    
       <Route exact path='/' element={<Home/>}></Route>
       <Route exact path='/create' element={<Create/>}></Route>
       <Route exact path='/edit/:id' element={<Edit/>}></Route>
