@@ -8,7 +8,7 @@ const Edit = () => {
     const location = useLocation();
     const navigate = useNavigate();
     if (!location.state) {
-        navigate('/task/list');
+        navigate('/list');
     }
     const post = location.state.post;
 
@@ -26,7 +26,7 @@ const Edit = () => {
     useEffect(() => {
         if (edit_status) {
             localStorage.setItem('todoindex', JSON.stringify(List));
-            navigate('/task/list');
+            navigate('/list');
         }
     }, [edit_status]);
 

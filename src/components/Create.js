@@ -30,7 +30,7 @@ const Create = () => {
         setList([...List, { id: num + 1, name: Name, description: description, check: false }]);
         setAdd_status(true);
         setTimeout(() => {
-            navigate('/task/list');
+            navigate('/list');
          }, 2000);
         
     }
