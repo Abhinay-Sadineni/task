@@ -20,7 +20,7 @@ const TodoList= ({myList ,myhandleDelete ,myhandleCheck}) => {
                <td><p className="text-3x1 text-grey-darkest px-3 py-4" >{item.description}</p></td>
                <td><button className="flex-no-shrink p-2  border-2 rounded text-red border-red-500 hover:text-white hover:bg-red-500" onClick={()=>myhandleCheck(item.id)} >{item.check ? "done":"notdone"}</button></td>
                <td className="flex flex-row justify-left"> <button className="flex-no-shrink p-2 m-2 border-2 rounded text-red border-red-500 hover:text-white hover:bg-red-500" onClick={() => myhandleDelete(item.id)}>Delete</button>
-              <Link to={"/edit/"+item.id} state={{post : item}} className="flex-no-shrink p-2 m-2 border-2 rounded text-red border-red-500 hover:text-white hover:bg-red-500"  >Edit</Link></td>
+              <Link to={"/task/edit/"+item.id} state={{post : item}} className="flex-no-shrink p-2 m-2 border-2 rounded text-red border-red-500 hover:text-white hover:bg-red-500"  >Edit</Link></td>
             </tr>
            )
         })}
