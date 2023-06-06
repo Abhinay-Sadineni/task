@@ -1,12 +1,10 @@
-import Navbar from "./Navbar";
+
 import{useState,useEffect} from 'react';
 import TodoList from './List';
 
 
 const ListPage = () => {
     const [Name,setName] = useState('');
-    const [description,setDescription] = useState('');
-    const [check,setCheck] = useState(false);
     const [all_status,setAll_status] = useState(false);
     const [ready,setReady] = useState(false);
 
@@ -94,7 +92,6 @@ const ListPage = () => {
 
     return ( 
     <div>
-        <Navbar></Navbar>
          <div className=' flex items-center justify-center  min-h-screen from-red-500 to-blue-500 bg-gradient-115'>
             <div className="bg-white flex flex-col w-1/2 mx-auto rounded-lg items-center justify-center ">
             
