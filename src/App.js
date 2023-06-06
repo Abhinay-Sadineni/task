@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter ,Route,Routes} from 'react-router-dom';
+import {HashRouter as Router ,Route,Routes} from 'react-router-dom';
 import Home from './components/Home';
 import Create from './components/Create';
 import ListPage from './components/ListPage';
@@ -7,7 +7,7 @@ import Edit from './components/Edit';
 function App() {
 
   return (
-    <BrowserRouter basename='/task'>
+    <Router >
     <main>
       <Routes>
       <Route exact path='/' element={<Home/>}></Route>
@@ -16,7 +16,7 @@ function App() {
       <Route exact path='/list' element={<ListPage/>}></Route>
       </Routes>
     </main>
-    </BrowserRouter >
+    </Router >
   );
 }
 
