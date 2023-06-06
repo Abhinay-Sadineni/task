@@ -9,7 +9,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const Home = () => {
     return (
     <div>
-      <Navbar></Navbar>
         <div className='relative flex flex-col justify-center min-h-screen from-red-500 to-blue-500 bg-gradient-115 overflow-hidden'>
         <div className='flex flex-col mx-12 mt-2 rounded-lg bg-white items-center justify-center'>
         <h1 className='text-3xl text-center font-semibold text-black'>Home</h1>

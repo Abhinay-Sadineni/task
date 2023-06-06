@@ -58,7 +58,6 @@ const Edit = () => {
     return (
 
         <div>
-            <Navbar></Navbar>
             <div className=' flex items-center justify-center  min-h-screen from-red-500 to-blue-500 bg-gradient-115'>
    
                 <div className="bg-white flex flex-col w-1/2 mx-auto rounded-lg items-center justify-center ">

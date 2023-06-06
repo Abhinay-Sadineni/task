@@ -37,9 +37,7 @@ const Create = () => {
     return (
 
         <div>
-            <Navbar></Navbar>
             <div className=' flex items-center justify-center  min-h-screen from-red-500 to-blue-500 bg-gradient-115'>
-   
                 <div className="bg-white flex flex-col w-1/2 mx-auto rounded-lg items-center justify-center ">
                     <h1>Create Task</h1>
                     <form onSubmit={handleCreate} className="flex flex-col w-full mb-4 mt-2">
